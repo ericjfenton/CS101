@@ -1,0 +1,6 @@
+Refactoring notes:
+
+Add better explanatory text at start and finish.
+
+Could create a question class.
+Could improve format of dollar result.

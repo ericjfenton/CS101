@@ -24,6 +24,10 @@ def calc_payment(years, annual_rate, principal):
     payment = monthly_rate * principal * formula1 / (formula1 - 1)
     return payment
 
+print("This is a mortgage calculator.")
+print("Entries include years to pay off, annual interest rate in percent,")
+print("and starting principal -- don't include commas or dollar sign.\n")
+
 # get years to pay off
 
 rangelow = 1.0
@@ -55,6 +59,8 @@ while myflag == False:
     myflag = check_it(principal, rangelow,  rangehi)
 
 payment = calc_payment(years, annual_rate, principal)
-print("Monthly payment is $" + str(payment))
+
+print("\nTo pay off $" + str(principal) + " in " + str(years) + " years at " + str(annual_rate) + " percent interest,")
+print("the monthly payment is $" + str(payment))
 
     
